@@ -193,5 +193,3 @@ The implemented experience is text chat. Landing-page references to real-time fo
 - **Groq errors:** Check your API key, account access to the configured model, and the backend terminal output. The current chat handler returns API exceptions inside the `reply` field.
 - **Missing templates or static files:** Start the server from the project root.
 - **Signup-page login link:** The existing link points to `login.html`; use `/login` directly if it does not navigate correctly.
-#   f i t n e s s - c h a t b o t  
- 
