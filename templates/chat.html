@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Bro Chat</title>
+    <link rel="stylesheet" href="/static/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="main-container">
+    
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="/static/image/Logo company.png" alt="Logo">
+            <h2>GoFit</h2>
+        </div>
+        
+        <button class="new-chat-btn" onclick="startNewChat()">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+
+        <div class="history-list" id="history-container">
+            <p class="history-title">Your History</p>
+            </div>
+
+        <div class="user-profile">
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span id="display-username">User</span>
+            </div>
+            <a href="/" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </div>
+
+    <div class="chat-area">
+        <div class="messages-container" id="chat-box">
+            <div class="message bot">
+                <div class="avatar"><i class="fas fa-robot"></i></div>
+                <div class="text">Apa macam bro? Ready to lift? 💪</div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <input type="text" id="user-input" placeholder="Ask Gym Bro (English/Malay)..." autocomplete="off">
+                <button onclick="sendMessage()" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <p class="disclaimer">Gym Bro AI can make mistakes. Always check your form!</p>
+        </div>
+    </div>
+</div>
+
+<script src="/static/chat.js?v=2"></script>
+
+</body>
+</html>

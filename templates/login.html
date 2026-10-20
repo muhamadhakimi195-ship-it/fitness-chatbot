@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+<header>
+   <div class="navigation">
+    <img src="/static/image/Logo company.png" alt="Gym Bro Logo" class="logocompany" >
+    <p class="title">GoFit or GoHome</p>
+    <a href="/" class="btn-homepage">HOME</a>
+   </div>
+
+</header>
+<main>
+<div class="login-container">
+        <h2>GYM BRO LOGIN</h2>
+        <form action="/login" method="post">
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+        
+        <a href="/signup" class="signup">Create an account</a>
+    </div>
+</main>
+
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function() {
+        const username = document.getElementById('username').value;
+        localStorage.setItem("current_user", username); // <--- THIS SAVES THE NAME
+    });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.title{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;       /* Adds a "premium" breathing room */
+    font-size: 3rem
+}
+
+img{
+    width: 50px;
+
+}
+
+.btn-homepage{
+    margin-left: auto;
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: neon-pulse 2s infinite;
+    
+}
+
+.btn-homepage:hover {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 0 20px white, 0 0 40px white;
+    animation: none;
+}
+
+.navigation{
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+
+
+.login-container{
+    width: 350px;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 20px;
+    /*The light glow effect*/
+    border: 2px solid white;
+    box-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 40px white;
+    text-align: center;
+    transition: all 0.4s ease;
+
+}
+
+.login-container:hover{
+    transform: translateY(-5px);
+}
+
+h2{
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease; 
+}
+
+input:focus{
+    border-color: white;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    
+}
+
+.login-button{
+    background: transparent;
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: neon-pulse 2s infinite;
+
+}
+
+.login-button:hover{
+    background-color: white;
+    color: #333;
+    box-shadow: 0 0 20px white, 0 0 40px white;
+    animation: none;
+}
+
+.signup{
+    display: block;
+    margin-top: 30px;
+    color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+@keyframes neon-pulse {
+    0%, 100% {
+        box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    }
+    50% {
+        box-shadow: 0 0 15px white, 0 0 30px white, 0 0 40px white;
+    }
+}
